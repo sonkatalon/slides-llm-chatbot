@@ -1,0 +1,23 @@
+- id: refund-001
+  question: "What is our refund policy timeline?"
+  expected: "Customers have 30 days from purchase to request a refund."
+  expected_sources: ["policies/refunds.md"]
+
+- id: refund-002
+  question: "How long until a refund appears after approval?"
+  expected: "Refunds are issued to the original payment method within 5–10 business days."
+  expected_sources: ["policies/refunds.md"]
+
+- id: security-001
+  question: "How is data protected at rest and in transit?"
+  expected: "Encryption at rest uses AES-256 and in transit uses TLS 1.2+."
+  expected_sources: ["policies/security.md"]
+
+- id: rag-001
+  question: "Briefly explain RAG."
+  expected: "Retrieval Augmented Generation fetches relevant docs and adds them to the prompt to improve factual grounding."
+  expected_sources: ["product/faq.md"]
+
+- id: na-001
+  question: "What is the CEO's favorite movie?"
+  allow_no_answer: true
